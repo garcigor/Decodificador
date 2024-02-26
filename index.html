@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+                
+</head>
+<body>
+    <header>
+        <div class="logo__title">
+            <figure>
+                <img src="./assets/hacker.png" alt="Imagem Hacker">
+            </figure>
+            <p>Decodificador</p>
+        </div>
+        <div class="menu__header">
+            <div class="foto_perfil">
+                <figure>
+                    <img src="./assets/alura.png" alt="Logo Alura">
+                </figure>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="logo__decodificar">
+            <figure>
+                <img src="./assets/decodificar.png" alt="Imagem decodificando">
+            </figure>
+        </div>
+        <div class="container">
+            <div class="title">
+                <p>Codificar</p>
+            </div>
+            <div class="textarea mensagem">
+                <label for="mensagem">Digite ou cole sua mensagem</label>
+                <textarea name="mensagem" class="mensagem" id="textarea_mensagem" cols="30" rows="10"></textarea>
+            </div>
+            <div class="textarea result">
+                <label for="mensagem">Mensagem processada</label>
+                <textarea name="resultado" class="mensagem resultado" id="textarea_result" cols="30" rows="10" disabled></textarea>
+            </div>
+            <div class="botoes">
+                <button id="button_copy" type="button" onclick=copiar()>Copiar</button>
+                <button type="button" onclick=validarMensagem()>Encriptar</button>
+                <button type="button" onclick=descriptografar()>Descriptar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container__footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Igor Vargas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script src="js/index.js"></script>
+</html>
